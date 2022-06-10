@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.navigation {
+    padding-top: 38px;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .logo {
+    display: flex;
+    width: 90px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.07;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #555252;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: -1px;
+}
+
+.container .logo-m {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #1abc9c;
+    line-height: 1.07;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*.container .logo::first-letter {    /*Почему не выходит сделать первую букву другим цветом??? Пришлось делать через span(((((
+    font-weight: 900;
+    color: #1abc9c;
+}*/
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 454px;
+    padding-top: 5px;
+}
+
+.site-navigation li {
+    list-style-type: none;
+}
+
+.site-navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0f0101;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 11px;
+}
+
+.site-navigation a:hover {
+    color: #1abc9c;
+}
+
+.title {
+    padding-top: 100px;
+    padding-left: 52px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #515151;
+}
+
+.divider {
+    margin: 0 auto;
+    margin-top: 32px;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+}
+
+.catalog-list {
+    margin-top: 92px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.catalog-list li {
+    list-style-type: none;
+}
+
+.catalog-list .catalog-item {
+    margin-bottom: 30px;
+}
+
+.catalog-item .catalog-item-price {
+    display: flex;
+    width: 255px;
+    height: 40px;
+    background-color: #323232;
+    margin-top: -44px;
+}
+
+.catalog-item-price .button {
+    width: 201px;
+    padding-left: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+}
+
+.catalog-item-price b {
+    width: 54px;
+    background-color: #8c8c8c;
+
+
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+    text-align: center;
+}
+
+.catalog-item-price .button:hover { /*как сделать чтобы было одновременно при наведении на .catalog-item-price???*/
+    background-color:#1abc9c;
+}
+
+.catalog-list .catalog-item .catalog-item-price b:hover { /*как сделать чтобы было одновременно при наведении на .catalog-item-price???*/
+    background-color:#7fd9c7;
+}
+
+
+.title-news {
+    padding-top: 76px;
+    padding-left: 11px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #515151;
+}
+.news {
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: -10px;
+}
+
+
+.news .news-list {
+    width: 350px;
+}
+
+.news .news-list .heading {
+    margin-top: 3px;
+    margin-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #555252;
+}
+
+.news .news-list .divider-news {
+    margin-top: 9px;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+}
+
+.news .news-list .text {
+    margin-top: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.86;
+    letter-spacing: -0.28px;
+    text-align: left;
+    color: #555252;
+}
+
+.news .news-list .button {
+    margin-top: 11px;
+    width: 159px;
+    height: 51px;
+    box-shadow: 1px 1.7px 5px 0 rgba(0, 0, 0, 0.39);
+    background-color: #4ec6ab;
+    border-radius: 4px;
+    padding: 15px 40px 18px 40px;
+}
+
+.news .news-list .button .btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+    text-align: center;
+    color: #fff;
+}
